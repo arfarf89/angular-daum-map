@@ -3,6 +3,12 @@ angular-daum-map
 
 **angular-daum-map** is a directive for AngularJS to wrap Daum Map.
 
+## Dependencies
+
+angular-daum-map requires AngularJS and Daum Map. Please include line below in *index.html*.
+
+    <script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=your_api_key"></script>
+
 ## Getting Started
 
 ### Installation
