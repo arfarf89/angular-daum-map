@@ -1,0 +1,17 @@
+{
+  "name": "angular-daum-map",
+  "version": "0.0.0",
+  "homepage": "https://github.com/arfarf89/angular-daum-map",
+  "authors": [
+    "Hyungsul Kim <hyungsul.kim@meshkorea.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
