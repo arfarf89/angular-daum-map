@@ -143,11 +143,11 @@ angular.module('angularDaumMap', [])
       scope.map = map;
     },
     controller: function($scope) {
-      return {
+      _.extend(this, {
         getMap: function() {
           return $scope.map;
         }
-      };
+      });
     }
   };
 })
@@ -191,14 +191,14 @@ angular.module('angularDaumMap', [])
       })
     },
     controller: function($scope) {
-      return {
+      _.extend(this, {
         getMarkerPosition: function() {
           return $scope.position;
         },
         getMap: function() {
           return $scope.map;
         }
-      };
+      });
     }
   };
 })
@@ -300,11 +300,11 @@ angular.module('angularDaumMap', [])
       });
     },
     controller: function($scope) {
-      return {
+      _.extend(this, {
         getMap: function() {
           return $scope.map;
         }
-      };
+      });
     }
   };
 });
