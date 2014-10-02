@@ -1,0 +1,38 @@
+<html>
+<head>
+  <style>
+    html, body { padding: 0; margin: 0; }
+    .marker-label {
+      background: white;
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 2px 5px;
+    }
+  </style>
+</head>
+<body>
+<div ng-app="example" ng-controller="MainCtrl">
+<daum-map center="map.center" draggable="map.draggable" level="map.level" map-type-id="map.mapTypeId" events="events">
+  <daum-marker position="orig.position">
+    <daum-marker-label>
+      <div class="marker-label">{{orig.label}}</div>
+    </daum-marker-label>
+  </daum-marker>
+
+  <daum-marker position="dest.position">
+    <daum-marker-label>
+      <div class="marker-label">{{dest.label}}</div>
+    </daum-marker-label>
+  </daum-marker>
+
+  <daum-polyline path="[orig.position, dest.position]"></daum-polyline>
+</daum-map>
+</div>
+
+<script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=YOUR_API_KEY"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script type="text/javascript" src="../dist/angular-daum-map.js"></script>
+<script type="text/javascript" src="example.js"></script>
+</body>
+</html>
