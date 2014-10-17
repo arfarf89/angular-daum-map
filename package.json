@@ -1,6 +1,6 @@
 {
   "name": "angular-daum-map",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A directive for AngularJS to wrap DAUM map.",
   "repository": {
     "type": "git",
