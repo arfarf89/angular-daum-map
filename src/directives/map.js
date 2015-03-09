@@ -13,6 +13,7 @@
           level: '=level',
           mapTypeId: '=mapTypeId',
           draggable: '=draggable',
+          scrollWheel: '=scrollWheel',
           events: '=events'
         },
         link: function (scope, element) {
@@ -38,7 +39,8 @@
             center: new daum.maps.LatLng(scope.center.latitude, scope.center.longitude),
             level: scope.level,
             mapTypeId: scope.mapTypeId,
-            draggable: scope.draggable
+            draggable: scope.draggable,
+            scrollWheel: scope.scrollWheel
           });
           map.addControl(new daum.maps.ZoomControl(), daum.maps.ControlPosition.RIGHT);
 
